@@ -1121,7 +1121,7 @@ input:focus {
 #content {
   position: relative;
   background-color: #000;
-  padding: 25px 0 50px;
+  padding-bottom: 50px;
   border-bottom: 1px solid #fff;
   min-height: -webkit-calc(100vh - 400px);
   min-height: calc(100vh - 400px); }
@@ -1376,7 +1376,54 @@ input:focus {
   #content h1 {
     font-size: 40px; }
   #content h4 {
-    font-size: 26px; } }
+    font-size: 26px; }
+  #content .content .form-block {
+    width: 100%; }
+  #content .content .form {
+    padding: 15px; }
+    #content .content .form__head {
+      font-size: 30px; }
+    #content .content .form__inp {
+      font-size: 18px; }
+    #content .content .form label.error {
+      font-size: 12px; }
+    #content .content .form__btn-submit {
+      font-size: 22px; }
+  #content .content .form-payment {
+    padding: 15px; }
+    #content .content .form-payment__row {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+    #content .content .form-payment__lbl {
+      width: 100%;
+      font-size: 18px; }
+    #content .content .form-payment__inp {
+      font-size: 18px; }
+    #content .content .form-payment label.error {
+      top: 62px;
+      font-size: 12px; }
+    #content .content .form-payment__btn-submit {
+      font-size: 22px; }
+  #content .content .counter-block {
+    margin: 0; }
+    #content .content .counter-block #clock {
+      max-width: 275px;
+      margin: 50px auto; }
+  .flip-clock-divider .flip-clock-label {
+    font-size: 18px;
+    right: -63px; }
+  .flip-clock-divider.minutes .flip-clock-label {
+    right: -70px; }
+  .flip-clock-divider.seconds .flip-clock-label {
+    right: -75px; }
+  .flip-clock-wrapper ul {
+    width: 35px;
+    margin: 2px; }
+  .flip-clock-wrapper ul li a div div.inn {
+    font-size: 40px; } }
 
 #footer {
   background-color: #000;
