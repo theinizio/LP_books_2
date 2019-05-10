@@ -43,7 +43,7 @@
     .form {
       display: block;
       width: 100%;
-      max-width: 460px;
+      max-width: 470px;
       background-color: rgba(0, 0, 0, .6);
       border: 3px solid #fff;
       padding: 30px;
@@ -113,7 +113,7 @@
         text-transform: uppercase;
         color: #fff;
         text-align: center;
-        font-size: 30px;
+        font-size: 24px;
         outline: none;
         border: none;
         border-radius: 8px;
@@ -129,7 +129,7 @@
     .form-payment {
       display: none;
       width: 100%;
-      max-width: 460px;
+      max-width: 470px;
       background-color: rgba(0, 0, 0, .6);
       border: 3px solid #fff;
       padding: 30px;
@@ -145,7 +145,7 @@
 
       &__lbl {
         display: inline-block;
-        width: 260px;
+        width: 300px;
         color: #fff;
         font-size: 22px;
         cursor: pointer;
@@ -191,7 +191,7 @@
         text-transform: uppercase;
         color: #fff;
         text-align: center;
-        font-size: 30px;
+        font-size: 24px;
         outline: none;
         border: none;
         border-radius: 8px;
@@ -221,6 +221,7 @@
 
         .line-through {
           text-decoration: line-through;
+          margin-left: 20px;
         }
       }
 
@@ -310,7 +311,7 @@
         }
 
         &__btn-submit {
-          font-size: 22px;
+          font-size: 18px;
         }
       }
 
@@ -336,7 +337,7 @@
         }
 
         &__btn-submit {
-          font-size: 22px;
+          font-size: 18px;
         }
       }
 

@@ -232,12 +232,45 @@ $(document).ready(function () {
     });
 
 
+    // === MENU LANG === //
+    $('.localization .active').on('click', function() {
+        $('.localization .list').toggleClass('open');
+    });
+
+    $('.localization .list li').on('click', function() {
+        let lang = $(this).find('.list__lang').attr('data-lang');
+        localStorage.setItem('lang', lang);
+        window.location.reload();
+    });
+
+
+    // === TRANSLATES === //
+    var language = localStorage.getItem('lang') || 'en';
+
+    console.log(language);
+
+    $('.localization .active').append('<img src="img/language/' + language + '.png" alt=""><span class="active__lang">' + language + '</span>');
+
+    var option = document.querySelectorAll('.localization .list__lang');
+
+    option.forEach(function (el) {
+        if (language === $(el).attr('data-lang')) {
+            $(el).parent().addClass('selected');
+        }
+    });
+
+    $("[data-localize]").localize("translate", {
+        pathPrefix: "./translates",
+        language: language
+    });
+
+
     // === FLIP CLOCK === //
     clock = $('#clock').FlipClock(5000, {
-        // ... your options here
         clockFace: 'HoursCounter',
         autoPlay: false,
         countdown: true,
+        language: language,
         callbacks:  {
             stop: function () {
                 console.log('Stop');

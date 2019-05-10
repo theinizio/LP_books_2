@@ -1,0 +1,33 @@
+{
+  "headerTitle_1": "Ottieni un nuovo Iphone Xs per 2 $",
+  "headerTitle_2": "La vita è più semplice con l'Iphone",
+  "form": {
+    "title": "Effettuare un ordine",
+    "firstName": "Nome di battesimo",
+    "lastName": "Cognome",
+    "email": "E-mail",
+    "phone": "Telefono",
+    "city": "Città",
+    "address": "Indirizzo",
+    "zip": "Codice postale",
+    "agree": "Confermi di aver raggiunto 18 anni",
+    "btnContinue": "Continuare",
+    "cartType": "Tipo di carrello",
+    "cartNumber": "Numero del carrello",
+    "expirationDate": "Data di scadenza",
+    "name": "Nome",
+    "cvv": "cvv",
+    "btnConfirm": "Ordina ora"
+  },
+  "counterTitle": "Apple Iphone Xs",
+  "counterVal": "Valore",
+  "counterPay": "Paghi solo 2 $",
+  "counterTime": "Tempo rimanente",
+  "footerTitle": "Prova a vincere Iphone Xs oggi e prendi parte alla lotteria. Il fortunato vincitore verrà contattato via e-mail.",
+  "footerQues_1": "Come posso vincere.",
+  "footerDesc_1": "Grazie alla tua iscrizione, parteciperai anche al nostro concorso per vincere. Disegneremo un vincitore ogni 600 partecipanti. Il prossimo vincitore sarà estratto il 02.05.2019 e verrà informato direttamente via e-mail. Se il premio è esaurito, il vincitore riceverà invece un prodotto simile di valore uguale o superiore.",
+  "footerQues_2": "Nessun costo nascosto",
+  "footerDesc_2": "Facciamo in modo che i nostri membri forniscano una cronologia dettagliata delle transazioni in modo che sappiano cosa stanno pagando. Le informazioni sulla carta di credito sono richieste solo per facilitare acquisti futuri. Non ci saranno addebiti per l'estratto conto della tua carta di credito se non si aggiorna all'iscrizione PREMIUM e non si effettua un acquisto.",
+  "footerQues_3": "Perché abbiamo bisogno dei tuoi dati di fatturazione.",
+  "footerDesc_3": "Unendoti a questo servizio riceverai una prova di 5 giorni del programma del nostro partner. Se continui con un abbonamento oltre il periodo di prova di 5 giorni, ti verrà addebitato un importo della tua carta di credito, che varia a seconda della scelta. Quando il tuo contributo viene detratto dalla tua carta di credito sull'altro metodo di pagamento, manterrai l'accesso a questi servizi, che sono riservati esclusivamente ai membri che pagano per l'accesso sul nostro sito Web dei partner."
+}

@@ -1,0 +1,33 @@
+{
+  "headerTitle_1": "Obtenez un nouvel Iphone X pour 2 $",
+  "headerTitle_2": "La vie est plus simple avec l'Iphone",
+  "form": {
+    "title": "faire une commande",
+    "firstName": "Prénom",
+    "lastName": "Nom de famille",
+    "email": "E-mail",
+    "phone": "Téléphone",
+    "city": "La Ville",
+    "address": "Adresse",
+    "zip": "Code postal",
+    "agree": "Vous confirmez que vous avez atteint l'âge de 18 ans",
+    "btnContinue": "Continuer",
+    "cartType": "Type de chariot",
+    "cartNumber": "Numéro de panier",
+    "expirationDate": "Date d'expiration",
+    "name": "Nom",
+    "cvv": "cvv",
+    "btnConfirm": "Commandez maintenant"
+  },
+  "counterTitle": "Apple Iphone Xs",
+  "counterVal": "Valeur",
+  "counterPay": "Payez seulement 2 $",
+  "counterTime": "Temps restant",
+  "footerTitle": "Essayez de gagner des Iphone X aujourd'hui et participez à la loterie. L'heureux gagnant sera contacté par courrier électronique.",
+  "footerQues_1": "Comment puis-je gagner",
+  "footerDesc_1": "Grâce à votre adhésion, vous participez également à notre concours pour gagner. Nous allons tirer un gagnant tous les 600 participants. Le prochain gagnant sera tiré au sort le 02.05.2019 et sera informé directement par e-mail. Si la récompense est en rupture de stock, le gagnant recevra un produit similaire de valeur égale ou supérieure.",
+  "footerQues_2": "Pas de frais cachés",
+  "footerDesc_2": "Nous nous assurons que nos membres fournissent un historique détaillé des transactions afin qu'ils sachent ce qu'ils paient. Les informations de carte de crédit ne sont nécessaires que pour faciliter les achats futurs. Votre relevé de carte de crédit ne comportera aucun frais si vous ne passez pas à l’adhésion PREMIUM et ne faites pas d’achat.",
+  "footerQues_3": "Pourquoi avons-nous besoin de vos informations de facturation?",
+  "footerDesc_3": "En adhérant à ce service, vous bénéficierez d'une version d'essai de 5 jours du programme de notre partenaire. Si vous continuez avec un abonnement au-delà de la période d’essai de 5 jours, un montant de votre carte de crédit vous sera débité, qui varie en fonction du choix. Lorsque votre contribution est déduite de votre carte de crédit sur l’autre méthode de paiement, vous conservez l’accès à ces services, qui sont réservés exclusivement aux membres qui paient pour l’accès sur notre site Web partenaire."
+}
