@@ -1,8 +1,9 @@
 {
   "headerTitle_1": "Obtenez un nouvel Iphone X pour 2 $",
   "headerTitle_2": "La vie est plus simple avec l'Iphone",
+  "price": "Prix total",
   "form": {
-    "title": "faire une commande",
+    "title": "Faire une commande",
     "firstName": "Prénom",
     "lastName": "Nom de famille",
     "email": "E-mail",

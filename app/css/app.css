@@ -1120,8 +1120,8 @@ input:focus {
 
 .localization {
   position: fixed;
-  top: 10px;
-  right: 10px;
+  top: 20px;
+  right: 20px;
   display: inline-block;
   min-width: 70px;
   font-size: 16px;
@@ -1164,12 +1164,20 @@ input:focus {
       -webkit-transform: rotate(45deg);
           -ms-transform: rotate(45deg);
               transform: rotate(45deg);
-      margin-left: 9px; }
+      margin-left: 9px;
+      -webkit-transition: all .1s linear;
+      -o-transition: all .1s linear;
+      transition: all .1s linear; }
+    .localization .active.rotate:after {
+      top: 2px;
+      -webkit-transform: rotate(225deg);
+          -ms-transform: rotate(225deg);
+              transform: rotate(225deg); }
   .localization .list {
     display: block;
     width: 100%;
     position: absolute;
-    top: 35px;
+    top: 38px;
     left: 0;
     background-color: #fff;
     opacity: 0;
@@ -1227,6 +1235,40 @@ input:focus {
   border-bottom: 1px solid #fff;
   min-height: -webkit-calc(100vh - 400px);
   min-height: calc(100vh - 400px); }
+  #content .price-block {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 100%;
+    max-width: 1240px;
+    height: 576px;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    z-index: 2; }
+    #content .price-block .price {
+      display: block;
+      position: absolute;
+      bottom: 23%;
+      left: 55%;
+      width: 170px;
+      height: 170px;
+      -webkit-border-radius: 50%;
+              border-radius: 50%;
+      background: -webkit-gradient(linear, left top, left bottom, from(#3695E7), to(#0469C5));
+      background: -webkit-linear-gradient(top, #3695E7, #0469C5);
+      background: -o-linear-gradient(top, #3695E7, #0469C5);
+      background: linear-gradient(to bottom, #3695E7, #0469C5);
+      color: #fff;
+      font-size: 28px;
+      padding: 45px 0;
+      text-align: center; }
+      #content .price-block .price__num {
+        display: block;
+        font-family: DisplayBold, sans-serif;
+        font-size: 52px;
+        margin-top: 5px; }
   #content:after {
     content: '';
     display: block;
