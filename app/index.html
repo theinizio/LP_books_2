@@ -14,122 +14,81 @@
 </head>
 <body>
 
-<div class="localization">
-    <div class="active"><!-- js added lang --></div>
-    <ul class="list">
-        <li>
-            <img src="img/language/en.png" alt="">
-            <span class="list__lang" data-lang="en">EN</span>
-        </li>
-        <li>
-            <img src="img/language/de.png" alt="">
-            <span class="list__lang" data-lang="de">DE</span>
-        </li>
-        <li>
-            <img src="img/language/it.png" alt="">
-            <span class="list__lang" data-lang="it">IT</span>
-        </li>
-        <li>
-            <img src="img/language/fr.png" alt="">
-            <span class="list__lang" data-lang="fr">FR</span>
-        </li>
-    </ul>
-</div>
-
 <section id="content">
     <div class="price-block">
         <div class="price">
-            <span data-localize="price">Total price</span>
+            <span>Total price</span>
             <span class="price__num">2$</span>
         </div>
     </div>
     <div class="container">
-        <h1 data-localize="headerTitle_1">Get a new Iphone Xs for 2$</h1>
-        <h4 data-localize="headerTitle_2">Life is simpler with the Iphone</h4>
+        <h1>Get a new Iphone Xs for 2$</h1>
+        <h4>Life is simpler with the Iphone</h4>
         <div class="content">
             <div class="form-block">
                 <form class="form">
-                    <div class="form__head" data-localize="form.title">Make an order</div>
+                    <div class="form__head">Make an order</div>
                     <div class="form__row">
-                        <input class="form__inp" type="text" name="firstName" placeholder="First name"
-                               data-localize="form.firstName">
+                        <input class="form__inp" type="text" name="firstName" placeholder="First name">
                     </div>
                     <div class="form__row">
-                        <input class="form__inp" type="text" name="lastName" placeholder="Last name"
-                               data-localize="form.lastName">
+                        <input class="form__inp" type="text" name="lastName" placeholder="Last name">
                     </div>
                     <div class="form__row">
-                        <input class="form__inp" type="text" name="email" placeholder="Email"
-                               data-localize="form.email">
+                        <input class="form__inp" type="text" name="email" placeholder="Email">
                     </div>
                     <div class="form__row">
-                        <input class="form__inp" type="text" name="phone" placeholder="Phone"
-                               data-localize="form.phone">
+                        <input class="form__inp" type="text" name="phone" placeholder="Phone">
                     </div>
                     <div class="form__row">
-                        <input class="form__inp" type="text" name="city" placeholder="City"
-                               data-localize="form.city">
+                        <input class="form__inp" type="text" name="city" placeholder="City">
                     </div>
                     <div class="form__row">
-                        <input class="form__inp" type="text" name="address" placeholder="Address"
-                               data-localize="form.address">
+                        <input class="form__inp" type="text" name="address" placeholder="Address">
                     </div>
                     <div class="form__row">
-                        <input class="form__inp only-number" type="text" name="zip" placeholder="ZIP"
+                        <input class="form__inp" type="text" name="zip" placeholder="ZIP"
                                maxlength="10">
                     </div>
-                    <label class="agree checkbox" for="agree">
-                        <input class="form__checkbox" type="checkbox" id="agree">
-                        <span class="checkbox__span"></span>
-                        <span data-localize="form.agree">You confirm that you have already reached the age of 18</span>
-                    </label>
-                    <button class="form__btn-submit" type="submit" id="btn-form-submit" disabled
-                            data-localize="form.btnContinue">
+                    <button class="form__btn-submit" type="submit" id="btn-form-submit">
                         Continue
                     </button>
                 </form>
+
                 <form class="form-payment">
                     <div class="form-payment__row">
-                        <label class="form-payment__lbl" for="cart-type" data-localize="form.cartType">Cart type</label>
-                        <input class="form-payment__inp form-payment__inp-cart_type" type="text" name="cartType"
-                               id="cart-type" placeholder="Cart type" disabled data-localize="form.cartType">
-                    </div>
-                    <div class="form-payment__row">
-                        <label class="form-payment__lbl" for="cart-number" data-localize="form.cartNumber">Cart
-                            number</label>
-                        <input class="form-payment__inp" type="text" name="cartNumber" id="cart-number"
+                        <label class="form-payment__lbl" for="card-number">Card number</label>
+                        <input class="form-payment__inp" type="text" name="cardNumber" id="card-number"
                                placeholder="0000 0000 0000 0000">
                     </div>
                     <div class="form-payment__row">
-                        <label class="form-payment__lbl" for="expiration-date"
-                               data-localize="form.expirationDate">Expiration date</label>
+                        <label class="form-payment__lbl" for="expiration-date">Expiration date</label>
                         <input class="form-payment__inp" type="text" name="expirationDate" id="expiration-date"
                                placeholder="00/00">
                     </div>
                     <div class="form-payment__row">
-                        <label class="form-payment__lbl" for="name" data-localize="form.name">Name</label>
+                        <label class="form-payment__lbl" for="name">Name</label>
                         <input class="form-payment__inp" type="text" name="name" id="name" placeholder="Name"
-                               maxlength="20" data-localize="form.name">
+                               maxlength="20">
                     </div>
                     <div class="form-payment__row">
-                        <label class="form-payment__lbl" for="cvv" data-localize="form.cvv">CVV</label>
-                        <input class="form-payment__inp only-number" type="text" name="cvv" id="cvv"
-                               maxlength="3"
+                        <label class="form-payment__lbl" for="cvv">CVV</label>
+                        <input class="form-payment__inp only-number" type="text" name="cvv" id="cvv" maxlength="3"
                                placeholder="000">
                     </div>
-                    <button class="form-payment__btn-submit" type="submit" data-localize="form.btnConfirm">
+                    <button class="form-payment__btn-submit" type="submit">
                         Confirm payment
                     </button>
                 </form>
             </div>
 
             <div class="counter-block">
-                <div class="counter-block__head" data-localize="counterTitle">Apple Iphone Xs</div>
+                <div class="counter-block__head">Apple Iphone Xs</div>
                 <div class="counter-block__price">
-                    <span data-localize="counterVal">Value</span><span class="line-through">1000$</span><br>
-                    <span data-localize="counterPay">Pay only 2$</span>
+                    <span>Value</span><span class="line-through">1000$</span><br>
+                    <span>Pay only 2$</span>
                 </div>
-                <div class="counter-block__time" data-localize="counterTime">Remaining time</div>
+                <div class="counter-block__time">Remaining time</div>
                 <div class="counter">
                     <div id="clock"></div>
                 </div>
@@ -140,13 +99,13 @@
 
 <footer id="footer">
     <div class="container">
-        <h5 data-localize="footerTitle">Try to win the Iphone Xs today and take part in the lottery. The lucky winner
+        <h5>Try to win the Iphone Xs today and take part in the lottery. The lucky winner
             will be contacted by e-mail.</h5>
         <div class="row">
             <div class="col-lg-4">
                 <p>
-                    <span class="question" data-localize="footerQues_1">How can I win</span>
-                    <span data-localize="footerDesc_1">Thanks to your membership, you also participate in our contest to win a . We will draw
+                    <span class="question">How can I win</span>
+                    <span>Thanks to your membership, you also participate in our contest to win a . We will draw
                     a winner every 600 participants. The next winner will be drawn on 02.05.2019, and will be notified
                     directly by e-mail. If the reward is out of stock, the winner will instead receive a similar product
                         of equal or greater value.</span>
@@ -154,8 +113,8 @@
             </div>
             <div class="col-lg-4">
                 <p>
-                    <span class="question" data-localize="footerQues_2">No hidden fees</span>
-                    <span data-localize="footerDesc_2">We make sure that our members provide a detailed history of transactions so that they know what they
+                    <span class="question">No hidden fees</span>
+                    <span>We make sure that our members provide a detailed history of transactions so that they know what they
                     are paying. Credit card information is only required to facilitate future purchases. There will be
                     no charges for your credit card statement if you do not upgrade to PREMIUM membership and do not
                         make a purchase.</span>
@@ -163,8 +122,8 @@
             </div>
             <div class="col-lg-4">
                 <p>
-                    <span class="question" data-localize="footerQues_3">Why do we need your billing information</span>
-                    <span data-localize="footerDesc_3">By joining this service, you will receive a 5-day trial of our partner's program. If you continue
+                    <span class="question">Why do we need your billing information</span>
+                    <span>By joining this service, you will receive a 5-day trial of our partner's program. If you continue
                     with a subscription beyond the 5-day trial period, you will be charged an amount of your credit
                     card, which varies depending on the choice. When your contribution is deducted from your credit card
                     or other payment method, you will retain access to these services, which are reserved exclusively to
@@ -180,7 +139,7 @@
 <script src="libs/jquery.maskedinput.min.js"></script>
 <script src="libs/cleave.min.js"></script>
 <script src="libs/flipclock/flipclock.min.js"></script>
-<script src="libs/localize/jquery.localize.min.js"></script>
+<!--<script src="libs/localize/jquery.localize.min.js"></script>-->
 <script src="js/error404.js"></script>
 <script src="js/app.js"></script>
 

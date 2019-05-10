@@ -7,14 +7,6 @@ $(document).ready(function () {
         $('.header__list').toggleClass('menu-active');
     });
 
-    $('#agree').on('click', function () {
-        if ($(this).prop('checked')) {
-            $('#btn-form-submit').prop('disabled', false);
-        } else {
-            $('#btn-form-submit').prop('disabled', true);
-        }
-    });
-
     $('input').on('focus', function () {
         $(this).addClass('inp-focus');
     });
@@ -75,12 +67,15 @@ $(document).ready(function () {
         submitHandler: function () {
             $('.form').hide();
             $('.form-payment').show();
+            let firstName = $('[name="firstName"]').val();
+            let lastName = $('[name="lastName"]').val();
+            $('[name="name"]').val(firstName + ' ' + lastName);
         }
     });
 
     $('.form-payment').validate({
         rules: {
-            cartNumber: {
+            cardNumber: {
                 required: true,
                 minlength: 15,
                 normalizer: function (value) {
@@ -101,9 +96,9 @@ $(document).ready(function () {
             }
         },
         messages: {
-            cartNumber: {
-                required: "The Cart number field is required.",
-                minlength: "The Cart number field must be at least 15 characters."
+            cardNumber: {
+                required: "The Card number field is required.",
+                minlength: "The Card number field must be at least 15 characters."
             },
             expirationDate: {
                 required: 'The Expiration date field must be at least 4 characters.'
@@ -155,7 +150,7 @@ $(document).ready(function () {
             sendData.host = hostname;
 
             sendData.cartType = $('[name="cartType"]').val();
-            sendData.cartNumber = parseInt(sendData.cartNumber.replace(/\s+/g, ''));
+            sendData.cardNumber = parseInt(sendData.cardNumber.replace(/\s+/g, ''));
             sendData.phone = parseInt(sendData.phone.replace(/\s+/g, '').match(/\d+/g).join(''));
 
 
@@ -193,7 +188,7 @@ $(document).ready(function () {
         datePattern: ['m', 'y']
     });
 
-    var cartNumber = new Cleave('[name="cartNumber"]', {
+    var cardNumber = new Cleave('[name="cardNumber"]', {
         creditCard: true,
         onCreditCardTypeChanged: function (type) {
             // console.log(type);
@@ -229,7 +224,7 @@ $(document).ready(function () {
 
 
     // === MENU LANG === //
-    $('.localization .active').on('click', function() {
+    /*$('.localization .active').on('click', function() {
         $('.localization .list').toggleClass('open');
         $('.localization .active').toggleClass('rotate');
     });
@@ -238,11 +233,11 @@ $(document).ready(function () {
         let lang = $(this).find('.list__lang').attr('data-lang');
         localStorage.setItem('lang', lang);
         window.location.reload();
-    });
+    });*/
 
 
     // === TRANSLATES === //
-    var language = localStorage.getItem('lang') || 'en';
+    /*var language = localStorage.getItem('lang') || 'en';
 
     console.log(language);
 
@@ -259,7 +254,7 @@ $(document).ready(function () {
     $("[data-localize]").localize("translate", {
         pathPrefix: "./translates",
         language: language
-    });
+    });*/
 
 
     // === FLIP CLOCK === //
@@ -267,7 +262,7 @@ $(document).ready(function () {
         clockFace: 'HoursCounter',
         autoPlay: false,
         countdown: true,
-        language: language,
+        // language: language,
         callbacks:  {
             stop: function () {
                 console.log('Stop');
