@@ -58,8 +58,14 @@
                 <form class="form-payment">
                     <div class="form-payment__row">
                         <label class="form-payment__lbl" for="card-number">Card number</label>
-                        <input class="form-payment__inp" type="text" name="cardNumber" id="card-number"
-                               placeholder="0000 0000 0000 0000">
+                        <div class="form-payment__card-block">
+                            <input class="form-payment__inp form-payment__inp-card" type="text" name="cardNumber"
+                                   id="card-number"
+                                   placeholder="0000 0000 0000 0000">
+                            <span class="form-payment__card-type">
+                                <img id="card-type" src="img/credit_card/unknown.png" alt="">
+                            </span>
+                        </div>
                     </div>
                     <div class="form-payment__row">
                         <label class="form-payment__lbl" for="expiration-date">Expiration date</label>

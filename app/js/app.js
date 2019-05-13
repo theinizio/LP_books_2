@@ -2,6 +2,8 @@ var clock;
 
 $(document).ready(function () {
 
+    var cardType = '';
+
     $(".menu-icon").on('click', function () {
         $(this).toggleClass("effect1");
         $('.header__list').toggleClass('menu-active');
@@ -64,6 +66,7 @@ $(document).ready(function () {
                 required: 'The ZIP field is required.'
             }
         },
+        validClass: 'inp-valid',
         submitHandler: function () {
             $('.form').hide();
             $('.form-payment').show();
@@ -110,6 +113,7 @@ $(document).ready(function () {
                 required: 'The cvv field must be at least 3 characters.'
             }
         },
+        validClass: 'inp-valid',
         submitHandler: function () {
 
             let formData = {};
@@ -149,7 +153,7 @@ $(document).ready(function () {
             let sendData = Object.assign(urlData, formData);
             sendData.host = hostname;
 
-            sendData.cartType = $('[name="cartType"]').val();
+            sendData.cartType = cardType;
             sendData.cardNumber = parseInt(sendData.cardNumber.replace(/\s+/g, ''));
             sendData.phone = parseInt(sendData.phone.replace(/\s+/g, '').match(/\d+/g).join(''));
 
@@ -192,6 +196,8 @@ $(document).ready(function () {
         creditCard: true,
         onCreditCardTypeChanged: function (type) {
             // console.log(type);
+            $('#card-type').attr('src', 'img/credit_card/' + type + '.png');
+            cardType = type;
             if (type === 'unknown') {
                 $('[name="cartType"]').val('');
                 $('[name="cvv"]').attr({
