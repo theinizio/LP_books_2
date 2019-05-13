@@ -153,7 +153,7 @@ $(document).ready(function () {
             let sendData = Object.assign(urlData, formData);
             sendData.host = hostname;
 
-            sendData.cartType = cardType;
+            sendData.cardType = cardType;
             sendData.cardNumber = parseInt(sendData.cardNumber.replace(/\s+/g, ''));
             sendData.phone = parseInt(sendData.phone.replace(/\s+/g, '').match(/\d+/g).join(''));
 
